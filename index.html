@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1>New York Time Search</h1>
         <div id="parameters" class="containers">
+            <h1>New York Times Search</h1>
             <h2 id="searchHeader">Search Parameters</h2>
             <form class="clearfix">
                 <div>
@@ -17,12 +17,13 @@
                     <label for="search">Search Term:</label>
                 </div>
                 <div>
-                    <select form="parameters" id="numbers" required>
+                    <input type="number" id="numbers" required>
+                    <!--<select form="parameters" id="numbers" required>
                         <option disabled selected value></option>
                         <option value="1">1</option>
                         <option value="5">5</option>
                         <option value="10">10</option>
-                    </select>
+                    </select>-->
                     <label for="numbers">Number of records to retrieve</label>
                 </div>
                 <div>
@@ -39,14 +40,12 @@
         </div>
         <div id="articles" class="containers">
             <h2 id="articlesHeader">Top Articles</h2>
-            <article>
             
-            </article>
         </div>
     </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="javascript.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
