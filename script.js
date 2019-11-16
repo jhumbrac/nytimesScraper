@@ -14,7 +14,7 @@ $("#submitBtn").on("click", function(event) {
     .then(function(response) {
       var articlesReturn = response.response.docs;
       var selectVal = $('#numbers').val();
-      $('#articles').html('').append( $('<h2 id="searchHeader">Search Parameters</h2>') );
+      $('#articles').html('').append( $('<h2 id="searchHeader">Search Results</h2>') );
       console.log(response);
       console.log(selectVal);
       
