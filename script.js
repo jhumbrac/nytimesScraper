@@ -26,7 +26,7 @@ $("#submitBtn").on("click", function(event) {
         var c = $('<h4>').text(articlesReturn[i].byline.original);
         var d = $('<p>').attr('class', 'date').text(articlesReturn[i].pub_date);
         var e = $('<p>').text(articlesReturn[i].abstract);
-        var f = $('<a>').attr('href', articlesReturn[i].web_url).attr('class', 'cta').text('Read more');
+        var f = $('<a>').attr('href', articlesReturn[i].web_url).attr('class', 'cta').attr('target', '_blank').text('Read more');
         a.append(b);
         a.append(c);
         a.append(d);
